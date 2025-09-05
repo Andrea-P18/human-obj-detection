@@ -1,9 +1,9 @@
 YOLOv8 Human Detection
-
+----------------------
 Questo codice permette di rilevare persone in webcam live o in video pre-registrati utilizzando YOLOv8 e la libreria supervision per le annotazioni
 
 Requisiti:
-
+-----
 Python 3.10 (in quanto La versione Python 3.12 dava problemi con cuda)
 
 Le librerie importate in main.py:
@@ -15,14 +15,14 @@ Le librerie importate in main.py:
 Eseguire il codice all'interno di un ambiente in cui sono installate tutte le librerie
 
 -----------------------------------------
+
 PER ESEGUIRE IL CODICE
 
 da terminale, posizionarsi nella cartella del progetto e lanciare:
 
-
 python -m main --mode {cam|video} --webcam-resolution w h --path video_path --dev {cpu|cuda}
 
-
+-----------------------------------------
 Parametri principali:
 
 mode: modalità di esecuzione
@@ -39,4 +39,5 @@ path: percorso del video da analizzare
 dev: device su cui eseguire il modello
     cpu -> esecuzione su cpu
     cuda -> esecuzione su gpu (se disponibile)
+
 
