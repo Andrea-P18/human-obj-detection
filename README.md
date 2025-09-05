@@ -3,6 +3,7 @@ YOLOv8 Human Detection
 Questo codice permette di rilevare persone in webcam live o in video pre-registrati utilizzando YOLOv8 e la libreria supervision per le annotazioni
 
 Requisiti:
+
 -Python 3.10 (in quanto La versione Python 3.12 dava problemi con cuda)
 -Le librerie importate in main.py:
     ultralytics (YOLO)
@@ -10,6 +11,7 @@ Requisiti:
     opencv-python
     torch
 Eseguire il codice all'interno di un ambiente in cui sono installate tutte le librerie
+
 -----------------------------------------
 PER ESEGUIRE IL CODICE
 
@@ -28,4 +30,5 @@ Parametri principali:
     parametro per adesso inutile perché non è stata prevista la sua inclusione in quanto il seguente codice è solo un esempio
 --dev: device su cui eseguire il modello
     cpu -> esecuzione su cpu
+
     cuda -> esecuzione su gpu (se disponibile)
